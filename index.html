@@ -73,7 +73,6 @@
         	<figure class="photogallery__figure">
         	  <a class="photogallery__link" href="#">
         	  	<img class="photogallery__img" src="img/gallery.jpg" width="286" height="164" alt="Интерьер">
-              <figcaption class="photogallery__caption visually-hidden">Интерьер салона</figcaption>
         	  </a>
         	</figure>
         	<button class="button" type="button">Назад</button>
@@ -96,10 +95,10 @@
         	<a class="button" href="">Как проехать</a>
         	<a class="button" href="">Обратная связь</a>
         </section>
-        <section>
+        <section class="appointment">
         	<h2>Записаться</h2>
         	<p>Укажите желаемую дату и вресмя и мы свяжемся с вами для подтверждения брони</p>
-        	<form class="form" method="get" action="mailto:lobanova.irina.96@mail.ru">
+        	<form class="form" method="post" action="mailto:lobanova.irina.96@mail.ru">
             <label class="text" for="date">Дата</label>
             <input class="form__field" type="date" name="date" id="date">
             <label class="text" for="time">Время</label>
@@ -107,7 +106,7 @@
             <label class="text" for="name">Ваше имя</label>
             <input class="form__field" type="text" name="name" id="name" placeholder="Борода">
             <label class="text" for="phone-number">Телефон</label>
-            <input class="form__field" type="text" name="phone-number" id="phone-number" placeholder="+7 123 456-78-90">
+            <input class="form__field" type="tel" name="phone-number" id="phone-number" placeholder="+7 123 456-78-90">
             <button class="button" type="submit">Отправить</button>
           </form>
         </section>
