@@ -29,6 +29,12 @@ a {
 .button:focus {
   background-color: #663d15;
 }
+.button-html:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
 
 
 /*header*/
@@ -145,4 +151,18 @@ a {
 /*footer*/
 .footer {
   background-color: #232323;
+  background-image: url('../img/bg-dark.jpg');
+  color: #fff;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: underline;
+}
+.social__item {
+  background-color: #000;
+}
+.social__item:hover,
+.social__item:active,
+.social__item:focus {
+  background-color: #fff;
 }
