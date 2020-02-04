@@ -6,3 +6,61 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*header*/
+
+.header {
+  background-color: #000;
+  color: #fff;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.site-navigation__link:hover,
+.site-navigation__link:active,
+.site-navigation__link:focus {
+  background-color: #242424;
+  outline: none;
+}
+.site-navigation__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.site-navigation__link-current {
+	border-bottom: 4px solid #fff;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.user-navigation__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.user-navigation__link:hover,
+.user-navigation__link:active,
+.user-navigation__link:focus {
+  background-color: #242424;
+  outline: none;
+}
+
+
+/*MAIN*/
+
+.container {
+  background-image: url('../img/bg-light.jpg');
+}
+
+/*breadcrumbs*/
