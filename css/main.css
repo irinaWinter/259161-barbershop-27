@@ -10,6 +10,18 @@ body {
   text-transform: uppercase;
 }
 
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .inner-page {
   color: #000;
 
@@ -79,6 +91,35 @@ a {
   line-height: 42px;
 }
 
+
+/*continers*/
+
+.header {
+  width: 100%;
+}
+
+.container-header {
+  width: 900px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+}
+.site-navigation__item {
+  margin-right: 40px;
+}
+
+.user-navigation {
+  margin-left: auto;
+}
+
 /*vjb*/
 .index-columns {
   color: #000000;
@@ -119,6 +160,12 @@ a {
 }
 /*vjb*/
 
+.inner {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .page-heading {
   font-size: 30px;
   line-height: 42px;
@@ -126,11 +173,17 @@ a {
 
 /*breadcrumbs*/
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .breadcrumbs a {
   color: #000;
+}
+.breadcrumbs li:not(:first-child) {
+  margin-left: 40px;
 }
 
 .breadcrumbs a:hover, 
@@ -143,6 +196,15 @@ a {
 }
 
 /*dsfspdhf*/
+.inner-goods {
+  display: flex;
+}
+
+.filter {
+  margin: 0;
+  width: 240px;
+}
+
 .filter fieldset {
   border: none;
 }
@@ -171,13 +233,33 @@ a {
 
 
 /*goods*/
+/*.goods {
+  width: 720px;
+}*/
+
+.right-column {
+  widows: 720px
+}
+
 .goods__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .goods__item {
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  flex-grow: 1;
+  flex-basis: 220px;
+}
+
+.goods__item:nth-child(3n+1) {
+  margin-left: 0;
 }
 
 .goods__item:hover {
@@ -209,6 +291,7 @@ a {
 
 /*pagination*/
 .pagination {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -229,7 +312,12 @@ a {
 }
 
 /*footer*/
+
+.inner-footer {
+  display: flex;
+}
 .footer {
+  display: flex;
   background-color: #232323;
   background-image: url('../img/bg-dark.jpg');
   color: #fff;
@@ -237,6 +325,11 @@ a {
 .footer__link {
   color: #fff;
   text-decoration: underline;
+}
+
+
+.social {
+  margin-left: 90px;
 }
 
 .social__list {
@@ -251,6 +344,10 @@ a {
 .social__item:active,
 .social__item:focus {
   background-color: #fff;
+}
+
+.developer {
+  margin-left: auto;
 }
 
 /*catalog-item*/
